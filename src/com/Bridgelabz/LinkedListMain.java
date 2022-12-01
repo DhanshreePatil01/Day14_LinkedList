@@ -49,7 +49,7 @@ public class LinkedListMain  {
 		listnew3.dispalyLinkedList();
 		System.out.println("---------------------------------------------------------------------------------");
 		
-		System.out.println("\nLinked List before deletion:");
+		System.out.println("\nLinked List before deletion of First element");
 		listnew1.dispalyLinkedList();
 		
 		INode deletedNode=listnew1.pop();
@@ -59,6 +59,15 @@ public class LinkedListMain  {
 		listnew1.dispalyLinkedList();
 		System.out.println("---------------------------------------------------------------------------------");
 		
+		 System.out.println("\nLinked List before deletion of Last Element");
+			
+			listnew3.dispalyLinkedList();
+			
+			INode deletedNode2 = listnew3.popLast();
+			System.out.println("\nThe node that is deleted is:"+deletedNode2.getKey());
+			System.out.println("\nLinked List after deleting last node using popLast method");
+			listnew3.dispalyLinkedList();
+			System.out.println("---------------------------------------------------------------------------------");
 		
 		
 	}

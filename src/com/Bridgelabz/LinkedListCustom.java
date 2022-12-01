@@ -105,7 +105,24 @@ public class LinkedListCustom<K> {
 		  return tempNode;
 	   }
 	
-	
+   public INode popLast() {
+		INode tempNode = this.head;
+		
+		// Looping till we reach last node
+		while(!tempNode.getNext().equals(this.tail)) {
+			tempNode = tempNode.getNext();
+			
+		}
+		
+		
+		this.tail = tempNode;
+		
+		tempNode = tempNode.getNext();
+		this.tail.setNext(null);
+		
+		return tempNode;
+		
+	}
 	public void dispalyLinkedList(){
 		System.out.println("My list"+head);
 	}
