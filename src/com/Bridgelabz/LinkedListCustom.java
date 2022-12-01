@@ -73,6 +73,35 @@ public class LinkedListCustom<K> {
 			
 			}
  }
+   public void insert(INode previousNode, INode newNode) {
+	     
+	     INode tempNode = previousNode.getNext();
+	   	 previousNode.setNext(newNode);
+		 newNode.setNext(tempNode);
+		 
+		// 56 --> 70
+			// 56 ---> 30      tempNode =70
+			// Insert(firstNode, newNode);
+			/* insert(56,30){
+					tempNode = 56.getNext();
+					tempNode = 70;
+					
+					56.setNext(30)
+					30.setNext(70)
+				
+					56---> 30 ---> 70
+				}
+				
+				
+				
+				Head-56-->54-->76--->74 ---->90--->45--->55-->65-->Tail
+				
+				
+			*/
+}
+	
+	
+	
 	public void dispalyLinkedList(){
 		System.out.println("My list"+head);
 	}
