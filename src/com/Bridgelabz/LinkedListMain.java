@@ -49,6 +49,17 @@ public class LinkedListMain  {
 		listnew3.dispalyLinkedList();
 		System.out.println("---------------------------------------------------------------------------------");
 		
+		System.out.println("\nLinked List before deletion:");
+		listnew1.dispalyLinkedList();
+		
+		INode deletedNode=listnew1.pop();
+		System.out.println("\nThe node is deleted: "+deletedNode.getKey());
+		
+		System.out.println("\nLinked List after deletion using pop method:");
+		listnew1.dispalyLinkedList();
+		System.out.println("---------------------------------------------------------------------------------");
+		
+		
 		
 	}
 	

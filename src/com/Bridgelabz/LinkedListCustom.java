@@ -99,7 +99,11 @@ public class LinkedListCustom<K> {
 				
 			*/
 }
-	
+   public INode pop() {
+		  INode tempNode=this.head;
+		  this.head=this.head.getNext();
+		  return tempNode;
+	   }
 	
 	
 	public void dispalyLinkedList(){
